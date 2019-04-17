@@ -1,10 +1,7 @@
 namespace PennyPacker.Models.Workers
 {
-    public class AutoWorker
+    public class AutoWorker : Worker
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-
         public void ConvertPartsToCars ()
         {
 

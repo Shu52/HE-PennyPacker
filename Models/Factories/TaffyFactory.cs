@@ -3,7 +3,7 @@ using PennyPacker.Interfaces;
 using PennyPacker.Models.Workers;
 
 namespace PennyPacker.Models.Factories {
-    public class TaffyFactory {
+    public class TaffyFactory : IFactory<Confectioner> {
         public List<Confectioner> employees { get; set; } = new List<Confectioner> ();
 
         public void HireEmployee (Confectioner employee) {
