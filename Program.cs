@@ -27,6 +27,7 @@ namespace PennyPacker
                 FirstName = "Michael",
                 LastName = "Bolt-on"
             });
+            johnsonChemical.MakeProduct(new Insulin());
 
             johnsonChemical.employees.ForEach(e =>
                 Console.WriteLine($"{e.FirstName} {e.LastName}"));

@@ -3,11 +3,7 @@ using PennyPacker.Interfaces;
 using PennyPacker.Models.Workers;
 
 namespace PennyPacker.Models.Factories {
-    public class InsulinFactory : IFactory<LabTechnician> {
-        public List<LabTechnician> employees { get; set; } = new List<LabTechnician> ();
+    public class InsulinFactory : Factory<LabTechnician, Insulin> {
 
-        public void HireEmployee (LabTechnician employee) {
-            employees.Add (employee);
-        }
     }
 }
