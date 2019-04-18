@@ -1,5 +1,6 @@
 ﻿using System;
 using PennyPacker.Models.Factories;
+using PennyPacker.Models.Products;
 using PennyPacker.Models.Workers;
 
 namespace PennyPacker
@@ -27,7 +28,9 @@ namespace PennyPacker
                 FirstName = "Michael",
                 LastName = "Bolt-on"
             });
-            johnsonChemical.MakeProduct(new Insulin());
+            johnsonChemical.MakeProduct(new Insulin() { Milliliters = 8.8 });
+
+            johnsonChemical.products.ForEach(p => Console.WriteLine(p.Milliliters));
 
             johnsonChemical.employees.ForEach(e =>
                 Console.WriteLine($"{e.FirstName} {e.LastName}"));

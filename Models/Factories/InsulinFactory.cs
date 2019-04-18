@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using PennyPacker.Interfaces;
+using PennyPacker.Models.Products;
 using PennyPacker.Models.Workers;
 
 namespace PennyPacker.Models.Factories {

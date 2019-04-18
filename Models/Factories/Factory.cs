@@ -15,6 +15,5 @@ namespace PennyPacker.Models.Factories
         public void MakeProduct (K product) {
             products.Add (product);
         }
-
     }
 }
